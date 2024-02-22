@@ -1,0 +1,41 @@
+@startuml pou
+
+class Pou
+
+class Juego
+class Comida
+class Ropa
+class Moneda
+class Higiene
+
+class Pelota
+class Carro
+class Patineta
+class Telefono
+
+class Caca
+class Medicina
+class Mascota
+
+Pou o-- Juego
+Pou o-- Comida
+Pou o-- Ropa
+Pou o-- Medicina
+Pou *-- Mascota
+Pou *-- Caca
+Pou *-- Higiene
+Pou *-- Telefono
+
+Caca --|> Moneda
+Higiene --|> Moneda
+Comida o-- Moneda
+Ropa o-- Moneda
+Juego --|> Moneda
+Medicina o-- Moneda
+
+Pelota --|> Juego
+Carro --|> Juego
+Patineta --|> Juego
+Telefono *-- Juego 
+
+@enduml
