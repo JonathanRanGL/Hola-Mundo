@@ -1,6 +1,14 @@
 @startuml pou
 
-class Pou
+class Pou{
+     //Los estados o atributos de una clase son objetos
+    - color
+    - tamaño
+    - porcentajeDeSalud
+    + Comer()
+    + Cagar()
+    + Duchar()
+}
 
 class Juego
 class Comida
